@@ -18,6 +18,7 @@ export default function Home() {
         <EmailSection />
       </div>
       <Footer />
+      nuevo cambio
     </main>
   );
 }
