@@ -53,19 +53,16 @@ const AboutSection = () => {
   return (
     <section className="text-white">
       <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:p">
-        <Image src="/images/about.jpg" width={600} height={600} />
+        <Image src="/images/about-image.png" width={800} height={600} />
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h2 className="text-4xl font-bold text-white mb-4">Sobre Mi</h2>
-          <p className="text-base md:text-lg">
+          <p className="text-sm text-align: justify md:text-lg text-align: justify">
             ¡Hola! Soy Lautaro Kaufmann, un apasionado desarrollador full stack
-            con una pasión por la creación de aplicaciones web y el desarrollo
-            de software. Con solo 22 años, he estado inmerso en el mundo de la
-            tecnología y he adquirido una amplia gama de habilidades para
-            enfrentar los desafíos del desarrollo en todas sus capas. Mi viaje
-            en el desarrollo comenzó con un amor por el diseño web y una
-            curiosidad insaciable por aprender cómo interactúan los usuarios con
-            las interfaces digitales. A medida que profundicé en el desarrollo
-            front-end, descubrí la magia de HTML, CSS y JavaScript, y cómo estas
+            de Argentina Con solo 22 años de edad. Mi viaje en el desarrollo
+            comenzó con un amor por el diseño web y una curiosidad insaciable
+            por aprender cómo interactúan los usuarios con las interfaces
+            digitales. A medida que profundicé en el desarrollo front-end,
+            descubrí la magia de HTML, CSS y JavaScript, y cómo estas
             herramientas pueden transformar ideas en experiencias interactivas y
             atractivas. A medida que mi pasión crecía, me aventuré en el
             desarrollo del lado del servidor y me sumergí en tecnologías como
@@ -75,7 +72,7 @@ const AboutSection = () => {
             Creo en la importancia de la colaboración y el intercambio de
             conocimientos para lograr resultados excepcionales.
           </p>
-          <div className="flex flex-row justify-start mt-">
+          <div className="flex flex-row justify-start mt-8">
             <TabButton
               selectTab={() => handleTabChange("skills")}
               active={tab === "skills"}
