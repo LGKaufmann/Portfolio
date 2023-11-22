@@ -1,29 +1,5 @@
-import { NextResponse } from "next/server";
 import { Resend } from "resend";
 
-const resend = new Resend("re_NaFnhptW_DgcTyooVL6ss7LrK1nhZQ5Pd");
-const fromEmail = "Acme <onboarding@resend.dev>";
+const resend = new Resend("re_123456789");
 
-export async function POST(req, res) {
-  const { email, subject, message } = await req.json();
-  console.log(email, subject, message);
-  try {
-    const data = await resend.emails.send({
-      from: fromEmail,
-      to: ["lautykaufmann76@gmail.com"],
-      subject: subject,
-      react: (
-        <>
-          <h1>{email}</h1>
-          <h1>{subject}</h1>
-          <p>Thank you for contacting us!</p>
-          <p>New message submitted:</p>
-          <p>{message}</p>
-        </>
-      ),
-    });
-    return NextResponse.json(data);
-  } catch (error) {
-    return NextResponse.json({ error });
-  }
-}
+resend.apiKeys.create({ name: "Production" });
