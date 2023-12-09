@@ -8,10 +8,10 @@ const projectsData = [
     id: 1,
     title: "Portfolio NextJS",
     description:
-      "Decidi realizar este proyecto de mi portfolio personal web utlizando NextJS con Tailwind",
+      "Proyecto realizado con el framework nextJS , con la libreria ReactJS utilizando estilos con Tailwind",
     image: "/images/projects/1.png",
     tag: ["All", "Web"],
-    gitUrl: "/",
+    gitUrl: "https://github.com/LGKaufmann/Portfolio",
     previewUrl: "/",
   },
   {
