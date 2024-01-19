@@ -22,7 +22,7 @@ const projectsData = [
     image: "/images/projects/2.png",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/pi-rym/PI-LGKaufmann",
-    previewUrl: "https://rickand-morty-frontend.vercel.app",
+    previewUrl: "https://therickandmortyproject.vercel.app",
   },
 ];
 
