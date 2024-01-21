@@ -16,13 +16,23 @@ const projectsData = [
   },
   {
     id: 2,
-    title: "Rick and Morty Proyecto",
+    title: "RyM Project",
     description:
       "Es un proyecto integrador desarrollado en el bootcamp de la academia soyHenry en donde realizo trabajos tanto por parte del cliente como del servidor",
     image: "/images/projects/2.png",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/pi-rym/PI-LGKaufmann",
     previewUrl: "https://therickandmortyproject.vercel.app",
+  },
+  {
+    id: 3,
+    title: "Pokemon Project",
+    description:
+      "Proyecto Individual donde combine todas las tecnologias aprendidas. Frontend: JS, HTML, CSS, React-Redux, Vite. Backend: NodeJS, Express, PostgreSQL, Sequelize.",
+    image: "/images/projects/3.png",
+    tag: ["All", "Web"],
+    gitUrl: "https://github.com/LGKaufmann/PokemonPI",
+    previewUrl: "https://mypokeapi-lgk.vercel.app",
   },
 ];
 
