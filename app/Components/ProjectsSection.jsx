@@ -18,7 +18,7 @@ const projectsData = [
     id: 2,
     title: "RyM Project",
     description:
-      "Es un proyecto integrador desarrollado en el bootcamp de la academia soyHenry en donde realizo trabajos tanto por parte del cliente como del servidor",
+      "Proyecto integrador realizado en los modulos M2, M3 Y M4 del bootcamps soyHenry aplicando las tecnologias que iba aprendiendo en el camino.",
     image: "/images/projects/2.png",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/pi-rym/PI-LGKaufmann",
