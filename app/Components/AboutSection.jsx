@@ -52,8 +52,8 @@ const AboutSection = () => {
 
   return (
     <section className="text-white" id="about">
-      <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
-        <Image src="/images/about-image.png" width={800} height={600} />
+      <div className="md:grid md:grid-cols-2 gap-8 items-center py-4 px-4 xl:gap-16 sm:py-16 xl:px-0">
+        <Image src="/images/about-image.png" width={600} height={800} />
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h2 className="text-4xl font-bold text-white mb-4">Sobre Mi</h2>
           <p className="text-sm  lg:text-lg">
@@ -72,7 +72,7 @@ const AboutSection = () => {
             Creo en la importancia de la colaboración y el intercambio de
             conocimientos para lograr resultados excepcionales.
           </p>
-          <div className="flex flex-row justify-start mt-8">
+          <div className="flex flex-row justify-start mt-6">
             <TabButton
               selectTab={() => handleTabChange("skills")}
               active={tab === "skills"}
@@ -95,7 +95,7 @@ const AboutSection = () => {
               Certificacion{""}
             </TabButton>
           </div>
-          <div className="mt-8">
+          <div className="mt-4">
             {TAB_DATA.find((t) => t.id === tab).content}
           </div>
         </div>

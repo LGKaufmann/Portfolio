@@ -55,10 +55,10 @@ const ProjectsSection = () => {
 
   return (
     <section id="projects">
-      <h2 className="text-center text-4xl font-bold text-white mt-4 mb-8 md:mb-12">
+      <h2 className="text-center text-4xl font-bold text-white mt-4 mb-8 md:mb-16">
         Mis Proyectos
       </h2>
-      <div className="text-white flex flex-row justify-center items-center gap-2 py-6">
+      {/* <div className="text-white flex flex-row justify-center items-center gap-2 py-6 mb-4">
         <ProjectTag
           onClick={handleTagChange}
           name="All"
@@ -69,7 +69,7 @@ const ProjectsSection = () => {
           name="Web"
           isSelected={tag === "Web"}
         />
-      </div>
+      </div> */}
       <ul ref={ref} className="grid md:grid-cols-3 gap-8 md:gap-12">
         {filteredProjects.map((project, index) => (
           <ProjectCard
