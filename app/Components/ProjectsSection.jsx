@@ -6,13 +6,13 @@ import ProjectTag from "./ProjectTag";
 const projectsData = [
   {
     id: 1,
-    title: "Portfolio NextJS",
+    title: "KaroKids Project",
     description:
-      "Proyecto realizado con el framework nextJS , con la libreria ReactJS utilizando estilos con Tailwind",
+      "Proyecto real realizado para una empresa de Colombia que se dedica a la venta de ropa infantil y de bebe, Se utilizo tecnologias como React, Redux Toolkit, Tailwind, NodeJS, Express, PostgreSQL, Nodemailer, Firebase, entre otras. Trabajo realizado tanto del lado Front como Back, y cumpliento los requerimientos solcitados por el cliente.",
     image: "/images/projects/1.png",
     tag: ["All", "Web"],
-    gitUrl: "https://github.com/LGKaufmann/Portfolio",
-    previewUrl: "/",
+    gitUrl: "",
+    previewUrl: "https://karokids-tienda.vercel.app",
   },
   {
     id: 2,
