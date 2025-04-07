@@ -25,7 +25,7 @@ const achievementsList = [
     value: "24",
   },
   {
-    metric: "Años de experiencia laboral",
+    metric: "Años de exp. laboral",
     value: "2",
   },
 ];
