@@ -8,13 +8,17 @@ const TAB_DATA = [
     title: "Skills",
     id: "skills",
     content: (
-      <ul className="list-disc pl-2">
+      <ul className="grid grid-cols-3 gap-2 list-disc pl-2">
+        <li>Typescript</li>
+        <li>JavaScript</li>
+        <li>React</li>
+        <li>Redux</li>
+        <li>Zustand</li>
+        <li>Tailwind</li>
         <li>Node.Js</li>
         <li>Express</li>
         <li>PostgreSQL</li>
-        <li>Sequelize</li>
-        <li>JavaScript</li>
-        <li>React</li>
+        <li>MongoDB</li>
       </ul>
     ),
   },
@@ -23,8 +27,11 @@ const TAB_DATA = [
     id: "education",
     content: (
       <ul className="list-disc pl-2">
-        <li>Universidad Tecnologica Nacional, Argentina</li>
-        <li>Academia SoyHenry</li>
+        <li>
+          Tecnico Universitario en Programacion, Universidad Tecnológica
+          Nacional , Argentina.
+        </li>
+        <li>Desarrollador Full Stack, Academia SoyHenry.</li>
       </ul>
     ),
   },
@@ -53,24 +60,32 @@ const AboutSection = () => {
   return (
     <section className="text-white" id="about">
       <div className="md:grid md:grid-cols-2 gap-8 items-center py-4 px-4 xl:gap-16 sm:py-16 xl:px-0">
-        <Image src="/images/about-image.png" width={600} height={800} />
+        <Image
+          src="/images/about-image.png"
+          className="rounded-lg"
+          width={600}
+          height={800}
+          alt="Foto de perfil"
+        />
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h2 className="text-4xl font-bold text-white mb-4">Sobre Mi</h2>
-          <p className="text-sm  lg:text-lg">
-            ¡Hola! Soy Lautaro Kaufmann, un apasionado desarrollador full stack
-            de Argentina Con solo 22 años de edad. Mi viaje en el desarrollo
-            comenzó con un amor por el diseño web y una curiosidad insaciable
-            por aprender cómo interactúan los usuarios con las interfaces
-            digitales. A medida que profundicé en el desarrollo front-end,
-            descubrí la magia de HTML, CSS y JavaScript, y cómo estas
-            herramientas pueden transformar ideas en experiencias interactivas y
-            atractivas. A medida que mi pasión crecía, me aventuré en el
-            desarrollo del lado del servidor y me sumergí en tecnologías como
-            Node.js y Express. Además de mis habilidades técnicas, también
-            valoro la comunicación efectiva y la capacidad de traducir ideas
-            complejas en términos accesibles para todos los miembros del equipo.
-            Creo en la importancia de la colaboración y el intercambio de
-            conocimientos para lograr resultados excepcionales.
+          <p className="text-sm lg:text-lg">
+            ¡Hola! Soy Lautaro Kaufmann, desarrollador full stack con enfoque en
+            frontend, de Argentina. Tengo 24 años y una gran pasión por
+            transformar ideas en interfaces modernas, intuitivas y funcionales.
+            Mi camino en la tecnología comenzó con el diseño web y rápidamente
+            evolucionó hacia el desarrollo frontend, especializándome en
+            herramientas como React, TypeScript, Vite, y TailwindCSS. Me encanta
+            trabajar en la experiencia del usuario, cuidando cada detalle visual
+            y de interacción para lograr productos que no solo funcionen bien,
+            sino que se sientan bien. Aunque mi fuerte está en el frontend,
+            también tengo experiencia desarrollando del lado del servidor con
+            Node.js, Express, y bases de datos como PostgreSQL y MongoDB, lo que
+            me permite entender y construir aplicaciones completas de punta a
+            punta. Valoro la comunicación clara, la eficiencia y la colaboración
+            en equipo. Siempre estoy buscando formas de crecer, mejorar mis
+            habilidades y aportar soluciones reales y bien pensadas a cada
+            proyecto en el que participo.
           </p>
           <div className="flex flex-row justify-start mt-6">
             <TabButton
@@ -85,14 +100,14 @@ const AboutSection = () => {
               active={tab === "education"}
             >
               {""}
-              Educacion{""}
+              Educación{""}
             </TabButton>
             <TabButton
               selectTab={() => handleTabChange("certification")}
               active={tab === "certification"}
             >
               {""}
-              Certificacion{""}
+              Certificación{""}
             </TabButton>
           </div>
           <div className="mt-4">

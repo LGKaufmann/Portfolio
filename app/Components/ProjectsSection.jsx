@@ -6,33 +6,33 @@ import ProjectTag from "./ProjectTag";
 const projectsData = [
   {
     id: 1,
-    title: "KaroKids Project",
+    title: "Medimarket",
     description:
-      "Proyecto real realizado para una empresa de Colombia que se dedica a la venta de ropa infantil y de bebe, Se utilizo tecnologias como React, Redux Toolkit, Tailwind, NodeJS, Express, PostgreSQL, Nodemailer, Firebase, entre otras. Trabajo realizado tanto del lado Front como Back, y cumpliento los requerimientos solcitados por el cliente.",
+      " Una plataforma web pensada para conectar proveedores y compradores de insumos médicos. Implementé funcionalidades de gestión de productos, control de stock, autenticación con roles y notificaciones por correo. Usé MongoDB para la base de datos y optimicé la experiencia del usuario con un diseño limpio y funcional.",
     image: "/images/projects/1.png",
     tag: ["All", "Web"],
     gitUrl: "",
-    previewUrl: "https://karokids-tienda.vercel.app",
+    previewUrl: "https://medic.shop",
   },
   {
     id: 2,
-    title: "RyM Project",
+    title: "TheLyricsBay",
     description:
-      "Proyecto integrador realizado en los modulos M2, M3 Y M4 del bootcamps soyHenry aplicando las tecnologias que iba aprendiendo en el camino.",
+      " Un espacio digital pensado para que artistas puedan compartir sus letras, encontrar colaboradores y crear comunidad. Incluye sistema de publicaciones, perfiles personalizados y feed dinámico. Acá utilicé PostgreSQL como base relacional, y desarrollé toda la arquitectura en Node.js + Express, junto a un frontend ágil y atractivo en React + Vite.",
     image: "/images/projects/2.png",
-    tag: ["All", "Web"],
-    gitUrl: "https://github.com/pi-rym/PI-LGKaufmann",
-    previewUrl: "https://therickandmortyproject.vercel.app",
+    tag: ["All", "Web", "Mobile"],
+    gitUrl: "",
+    previewUrl: "https://thelyricsbay.com",
   },
   {
     id: 3,
-    title: "Pokemon Project",
+    title: "Energy Solutions",
     description:
-      "Proyecto Individual donde combine todas las tecnologias aprendidas. Frontend: JS, HTML, CSS, React-Redux, Vite. Backend: NodeJS, Express, PostgreSQL, Sequelize.",
+      " Una página profesional para una empresa dedicada a la venta y mantenimiento de sistemas de energía ininterrumpida (UPS). Incluye catálogo de productos, sección de servicios, formulario de contacto con envío de correos y carga de imágenes de equipos. Utilicé MongoDB y enfoqué el diseño en la claridad y la experiencia del usuario.",
     image: "/images/projects/3.png",
     tag: ["All", "Web"],
-    gitUrl: "https://github.com/LGKaufmann/PokemonPI",
-    previewUrl: "https://mypokeapi-lgk.vercel.app",
+    gitUrl: "https://github.com/LGKaufmann/Energy-Solutions-Front",
+    previewUrl: "https://www.energy-solutions.com.ar",
   },
 ];
 
@@ -55,10 +55,10 @@ const ProjectsSection = () => {
 
   return (
     <section id="projects">
-      <h2 className="text-center text-4xl font-bold text-white mt-4 mb-8 md:mb-16">
+      <h2 className="text-center text-4xl font-bold text-white mt-4 mb-8 md:mb-8">
         Mis Proyectos
       </h2>
-      {/* <div className="text-white flex flex-row justify-center items-center gap-2 py-6 mb-4">
+      <div className="text-white flex flex-row justify-center items-center gap-2 py-6 mb-4">
         <ProjectTag
           onClick={handleTagChange}
           name="All"
@@ -69,7 +69,12 @@ const ProjectsSection = () => {
           name="Web"
           isSelected={tag === "Web"}
         />
-      </div> */}
+        <ProjectTag
+          onClick={handleTagChange}
+          name="Mobile"
+          isSelected={tag === "Mobile"}
+        />
+      </div>
       <ul ref={ref} className="grid md:grid-cols-3 gap-8 md:gap-12">
         {filteredProjects.map((project, index) => (
           <ProjectCard
